@@ -1,26 +1,48 @@
 # --- Core Logic Function (The "Brain") ---
 import pandas as pd
 def calculate_financials():
-    cash_on_hand = 75000
+    print("--- CHECKPOINT 1: Starting runway calculation... ---")
+
+    cash_on_hand = 7500000
     try:
         df = pd.read_csv('transactions.csv')
-    except FileNotFoundError:
-        # If the CSV doesn't exist, return an error
-        return {"error": "transactions.csv file not found."}
+        print("--- CHECKPOINT 2: transactions.csv read successfully. ---")
 
-    total_expenses = df[df['Amount'] < 0]['Amount'].sum()
-    avg_monthly_burn = abs(total_expenses / 2)
+        df['Date'] = pd.to_datetime(df['Date'])
+        print("--- CHECKPOINT 3: Date column converted. ---")
 
-    if avg_monthly_burn > 0:
-        runway_months = round(cash_on_hand / avg_monthly_burn, 1)
-    else:
-        runway_months = float('inf')
-            
-    return {
-        "runway_months": runway_months, 
-        "avg_monthly_burn": avg_monthly_burn, 
-        "cash_on_hand": cash_on_hand
-    }
+        num_months = df['Date'].dt.to_period('M').nunique()
+        print(f"--- CHECKPOINT 4: Found {num_months} unique months. ---")
+
+        if num_months == 0:
+            return {
+                "runway_months": float('inf'), 
+                "avg_monthly_burn": 0, 
+                "cash_on_hand": cash_on_hand
+            }
+
+        total_expenses = df[df['Amount'] < 0]['Amount'].sum()
+        print(f"--- CHECKPOINT 5: Total expenses calculated: {total_expenses}. ---")
+
+        avg_monthly_burn = abs(total_expenses / num_months)
+        print(f"--- CHECKPOINT 6: Average monthly burn calculated: {avg_monthly_burn}. ---")
+
+        if avg_monthly_burn > 0:
+            runway_months = round(cash_on_hand / avg_monthly_burn, 1)
+        else:
+            runway_months = float('inf')
+
+        print("--- CHECKPOINT 7: Runway calculation complete. ---")
+
+        return {
+            "runway_months": runway_months, 
+            "avg_monthly_burn": avg_monthly_burn, 
+            "cash_on_hand": cash_on_hand
+        }
+    except Exception as e:
+        # Adding a print statement to the except block to be sure
+        print(f"--- AN ERROR OCCURRED: {e} ---")
+        return {"error": str(e)}
     
     
     
