@@ -149,3 +149,4 @@ txn_147,2025-08-21,Subscription payment (rev_sub_08),154.0,Revenue,Customer_rev_
 txn_148,2025-08-22,Revenue - new client order 6,4393.0,Revenue,Client_New_6,,rev_new_6
 txn_149,2025-08-23,Revenue - new client order 3,6624.0,Revenue,Client_New_3,,rev_new_3
 txn_150,2025-08-25,Revenue - new client order 2,3469.0,Revenue,Client_New_2,,rev_new_2
+txn_496,2025-10-03,electricity,-500.0,maintainance,,,
