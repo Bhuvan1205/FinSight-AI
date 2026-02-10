@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { FiSearch, FiUsers, FiDollarSign } from 'react-icons/fi';
+import './Components.css';
 
 function ScenarioSimulator() {
   const [newHires, setNewHires] = useState('');

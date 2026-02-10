@@ -12,6 +12,7 @@ import {
   Legend,
   Filler
 } from 'chart.js';
+import './Components.css';
 
 ChartJS.register(
   CategoryScale,

@@ -1,0 +1,373 @@
+.upload-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.upload-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.upload-header h1 {
+  font-size: 2.5rem;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.upload-header p {
+  color: var(--text-secondary);
+  font-size: 1.1rem;
+}
+
+/* Dropzone */
+.dropzone {
+  border: 3px dashed rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.03);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dropzone.active {
+  border-color: var(--primary-color);
+  background: rgba(99, 102, 241, 0.1);
+  transform: scale(1.02);
+}
+
+.dropzone.has-file {
+  border-color: var(--success-color);
+  background: rgba(16, 185, 129, 0.05);
+}
+
+.upload-icon {
+  font-size: 4rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+}
+
+.dropzone h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.dropzone p {
+  color: var(--text-secondary);
+  margin: 0.5rem 0;
+}
+
+.file-input-label {
+  display: inline-block;
+  margin: 1rem 0;
+}
+
+.file-requirements {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-top: 1rem;
+}
+
+/* File Info */
+.file-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.file-icon {
+  font-size: 3rem;
+  color: var(--success-color);
+}
+
+.file-details h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.25rem;
+}
+
+.file-details p {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.remove-file {
+  background: rgba(239, 68, 68, 0.1);
+  border: none;
+  color: var(--error-color);
+  padding: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.remove-file:hover {
+  background: rgba(239, 68, 68, 0.2);
+  transform: scale(1.1);
+}
+
+/* Upload Actions */
+.upload-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Analyzing Status */
+.analyzing-status {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+}
+
+.spinner {
+  width: 50px;
+  height: 50px;
+  border: 4px solid rgba(255, 255, 255, 0.1);
+  border-top-color: var(--primary-color);
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Analysis Results */
+.analysis-results {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.result-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.success-icon {
+  font-size: 4rem;
+  color: var(--success-color);
+  margin-bottom: 1rem;
+}
+
+.result-header h2 {
+  font-size: 2rem;
+  color: var(--text-primary);
+}
+
+/* Result Summary */
+.result-summary {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.summary-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+  text-align: center;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.summary-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.summary-card.warning {
+  border-color: rgba(251, 191, 36, 0.3);
+  background: rgba(251, 191, 36, 0.05);
+}
+
+.summary-card h3 {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.big-number {
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.summary-card.warning .big-number {
+  background: linear-gradient(135deg, #fbbf24, #f59e0b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Financial Summary */
+.financial-summary {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.financial-summary h3 {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+}
+
+.summary-grid {
+  display: grid;
+  gap: 1rem;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.summary-item:last-child {
+  border-bottom: none;
+}
+
+.summary-item span:first-child {
+  color: var(--text-secondary);
+}
+
+.summary-item .positive {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.summary-item .negative {
+  color: var(--error-color);
+  font-weight: bold;
+}
+
+/* Anomalies Section */
+.anomalies-section {
+  background: rgba(251, 191, 36, 0.05);
+  padding: 1.5rem;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(251, 191, 36, 0.2);
+}
+
+.anomalies-section h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fbbf24;
+  margin-bottom: 1rem;
+}
+
+.anomalies-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.anomaly-item {
+  background: rgba(0, 0, 0, 0.2);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.anomaly-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.5rem;
+}
+
+.anomaly-info strong {
+  color: var(--text-primary);
+}
+
+.anomaly-amount {
+  color: #fbbf24;
+  font-weight: bold;
+}
+
+.anomaly-reason {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+/* Duplicates Warning */
+.duplicates-warning {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(251, 191, 36, 0.1);
+  padding: 1rem 1.5rem;
+  border-radius: 10px;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  margin-bottom: 2rem;
+}
+
+.duplicates-warning svg {
+  color: #fbbf24;
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.duplicates-warning p {
+  margin: 0;
+  color: var(--text-primary);
+}
+
+/* Result Actions */
+.result-actions {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .upload-container {
+    padding: 1rem;
+  }
+
+  .upload-header h1 {
+    font-size: 2rem;
+  }
+
+  .dropzone {
+    padding: 2rem 1rem;
+  }
+
+  .result-summary {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .big-number {
+    font-size: 2rem;
+  }
+}

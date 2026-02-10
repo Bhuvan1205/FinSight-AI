@@ -1,0 +1,61 @@
+Date,Transaction ID,Description,Amount,Category,Vendor,Notes
+2024-02-05,txn_20001,AWS EC2 Instances,-45000,Cloud Services,Amazon Web Services,Production servers
+2024-02-04,txn_20002,Senior Engineer Salary,-120000,Salaries,,Monthly salary - January
+2024-02-04,txn_20003,Mid-level Engineer Salary,-85000,Salaries,,Monthly salary - January
+2024-02-04,txn_20004,Junior Engineer Salary,-55000,Salaries,,Monthly salary - January
+2024-02-04,txn_20005,Marketing Manager Salary,-95000,Salaries,,Monthly salary - January
+2024-02-04,txn_20006,Product Manager Salary,-110000,Salaries,,Monthly salary - January
+2024-02-03,txn_20007,Office Rent - February,-85000,Office,,Monthly rent payment
+2024-02-02,txn_20008,Google Cloud Storage,-28000,Cloud Services,Google Cloud,Data storage and CDN
+2024-02-01,txn_20009,Client Payment - TechCorp,500000,Revenue,TechCorp Inc,Q1 2024 project milestone
+2024-01-31,txn_20010,Slack Business Plan,-8000,Software,Slack,Team communication
+2024-01-30,txn_20011,GitHub Enterprise,-15000,Software,GitHub,Code repository and CI/CD
+2024-01-29,txn_20012,Google Ads Campaign,-75000,Marketing,Google Ads,Brand awareness campaign
+2024-01-28,txn_20013,LinkedIn Recruitment Ads,-35000,Marketing,LinkedIn,Hiring campaign
+2024-01-27,txn_20014,Figma Professional Plan,-6000,Software,Figma,Design tools
+2024-01-26,txn_20015,Notion Team Workspace,-4000,Software,Notion,Documentation and wiki
+2024-01-25,txn_20016,DigitalOcean Droplets,-12000,Cloud Services,DigitalOcean,Development servers
+2024-01-24,txn_20017,Office Supplies,-12000,Office,Amazon Business,Desks and chairs
+2024-01-23,txn_20018,Internet & Phone Bills,-8000,Office,Airtel Business,Monthly utilities
+2024-01-22,txn_20019,Subscription Revenue,250000,Revenue,,Monthly SaaS subscriptions
+2024-01-21,txn_20020,Legal Consultation,-35000,Professional Services,Law Associates,Contract review
+2024-01-20,txn_20021,Accounting Services,-18000,Professional Services,CA & Co,Monthly bookkeeping
+2024-01-19,txn_20022,Team Lunch,-5000,HR,,Monthly team building
+2024-01-18,txn_20023,Consulting Project,150000,Revenue,Tech Solutions Inc,System architecture consulting
+2024-01-17,txn_20024,MongoDB Atlas,-22000,Cloud Services,MongoDB,Database hosting
+2024-01-16,txn_20025,Vercel Pro Plan,-8000,Cloud Services,Vercel,Frontend hosting
+2024-01-15,txn_20026,Postman Team Plan,-3500,Software,Postman,API development
+2024-01-14,txn_20027,DataDog Monitoring,-18000,Software,DataDog,Application monitoring
+2024-01-13,txn_20028,Content Marketing,-25000,Marketing,,Blog posts and SEO
+2024-01-12,txn_20029,Social Media Ads,-15000,Marketing,Meta,Facebook and Instagram ads
+2024-01-11,txn_20030,Zoom Business Plan,-5000,Software,Zoom,Video conferencing
+2024-01-10,txn_20031,Office Cleaning Service,-4000,Office,CleanPro,Weekly cleaning
+2024-01-09,txn_20032,Coffee & Snacks,-3000,Office,,Office pantry supplies
+2024-01-08,txn_20033,Electricity Bill,-6000,Office,,Monthly utilities
+2024-01-07,txn_20034,Client Payment - StartupXYZ,300000,Revenue,StartupXYZ,MVP development
+2024-01-06,txn_20035,Freelance Developer,-45000,Contractors,,React Native development
+2024-01-05,txn_20036,Freelance Designer,-30000,Contractors,,UI/UX design work
+2024-01-04,txn_20037,AWS S3 Storage,-8000,Cloud Services,Amazon Web Services,File storage
+2024-01-03,txn_20038,Cloudflare Pro,-2500,Cloud Services,Cloudflare,CDN and security
+2024-01-02,txn_20039,SendGrid Email Service,-4000,Software,SendGrid,Transactional emails
+2024-01-01,txn_20040,New Year Bonus,-50000,HR,,Employee bonuses
+2023-12-31,txn_20041,Year-end Client Payment,750000,Revenue,Enterprise Corp,Annual contract renewal
+2023-12-30,txn_20042,Insurance Premium,-25000,Professional Services,HDFC ERGO,Business insurance
+2023-12-29,txn_20043,Domain Renewals,-5000,Software,GoDaddy,Annual domain fees
+2023-12-28,txn_20044,SSL Certificates,-3000,Software,DigiCert,Security certificates
+2023-12-27,txn_20045,Stripe Payment Processing,-12000,Software,Stripe,Payment gateway fees
+2023-12-26,txn_20046,Office Furniture,-35000,Office,IKEA,New workstations
+2023-12-25,txn_20047,Holiday Party,-20000,HR,,Team celebration
+2023-12-24,txn_20048,Backup Services,-6000,Cloud Services,Backblaze,Data backup
+2023-12-23,txn_20049,Code Review Tool,-4500,Software,CodeClimate,Code quality
+2023-12-22,txn_20050,Project Management Tool,-7000,Software,Jira,Atlassian suite
+2023-12-21,txn_20051,Employee Training,-40000,HR,Udemy Business,Online courses
+2023-12-20,txn_20052,Travel Expenses,-28000,Operations,,Client meeting in Mumbai
+2023-12-19,txn_20053,Printer & Supplies,-8000,Office,HP,Office equipment
+2023-12-18,txn_20054,Security Audit,-50000,Professional Services,CyberSec Pro,Annual security review
+2023-12-17,txn_20055,API Subscription Revenue,180000,Revenue,,Enterprise API access
+2023-12-16,txn_20056,Customer Support Tool,-9000,Software,Intercom,Customer messaging
+2023-12-15,txn_20057,Analytics Platform,-12000,Software,Mixpanel,Product analytics
+2023-12-14,txn_20058,Email Marketing,-6000,Marketing,Mailchimp,Newsletter campaigns
+2023-12-13,txn_20059,Recruitment Agency Fee,-75000,HR,TalentHunt,Senior hire placement
+2023-12-12,txn_20060,Office Renovation,-120000,Office,,Workspace improvements

@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import { FiPlus, FiDollarSign } from 'react-icons/fi';
+import './Components.css';
 
 function AddExpenseForm() {
   const [description, setDescription] = useState('');
   const [amount, setAmount] = useState('');
   const [category, setCategory] = useState('');
   const [vendor, setVendor] = useState('');
+  const [date, setDate] = useState(new Date().toISOString().split('T')[0]);
   const [loading, setLoading] = useState(false);
 
   const handleSubmit = async (event) => {
@@ -17,7 +19,8 @@ function AddExpenseForm() {
       description: description,
       amount: -Math.abs(parseFloat(amount)),
       category: category,
-      vendor: vendor || null
+      vendor: vendor || null,
+      date: date
     };
 
     try {
@@ -27,6 +30,7 @@ function AddExpenseForm() {
       setAmount('');
       setCategory('');
       setVendor('');
+      setDate(new Date().toISOString().split('T')[0]);
     } catch (error) {
       console.error("There was an error adding the expense!", error);
       alert('Failed to add expense.');
@@ -48,6 +52,19 @@ function AddExpenseForm() {
       </div>
 
       <form onSubmit={handleSubmit} className="expense-form">
+        <div className="form-group">
+          <label className="form-label" htmlFor="date">Date</label>
+          <input
+            id="date"
+            className="form-input"
+            type="date"
+            value={date}
+            onChange={e => setDate(e.target.value)}
+            required
+            disabled={loading}
+          />
+        </div>
+
         <div className="form-group">
           <label className="form-label" htmlFor="description">Description</label>
           <input

@@ -1,0 +1,25 @@
+/* ===================================
+   TOOLS PAGE - PREMIUM DESIGN
+   =================================== */
+
+.tools-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 2rem;
+}
+
+@media (max-width: 768px) {
+  .tools-page {
+    padding: 1.5rem;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+}
